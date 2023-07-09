@@ -1,0 +1,1413 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+
+
+:root{
+    --them-bg: url("./assets/images/bgBlue.svg") no-repeat center;
+    --withe-color: #ffffff;
+    --withe-tranparent-color: #ffffffa7;
+    --transition: all .5s ease;
+    --blue-color:#1E54DB;
+    --orange-color:#F07547;
+    --red-color:#D84B53;
+    --black-color:#0D0821;
+    --yellow-color: #FDC647;
+    --green-color:#56C946;
+    --pink-color: #D84B53;
+    --bg-color:#1E54DB;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Montserrat","Poppins";
+}
+
+ .owl-carousel {
+    display: block;
+    height: 50rem;
+ }
+
+ .owl-nav{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 5rem;
+}
+
+.owl-carousel .owl-nav button.owl-next span{
+    font-size: 5rem;
+}
+/******* BASIC STYLE *******/
+a{
+    color: inherit;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container__md{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    color: var(--withe-color);
+    overflow: hidden;
+}
+
+.main__container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+button{
+    cursor: pointer;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta{
+    width: fit-content;
+    padding: 1rem 2.8rem;
+    font-size: 1.3rem;
+    border: none;
+    color: var(--withe-color);
+    background: var(--yellow-color);
+    font-weight: 600;
+    text-shadow: 0px 0px 4px black;
+    border-radius: 2rem;
+}
+.btn{
+    padding: 0.6rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    border: none;
+    background: var(--yellow-color);
+    color: var(--withe-color);
+    text-shadow: 0px 0px 3px black;
+}
+
+/*********LOADER ANIMATION*********/
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wrapper .left {
+    background: var(--red-color);
+    width: 100%;
+}
+
+.wrapper .right {
+    background: var(--red-color);
+    width: 100%;
+}
+
+.loadanim .left {
+    width: 0%;
+    transition: all .7s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.loadanim .right {
+    width: 0%;
+    transition: all .7s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+
+.loader_hidden {
+    opacity: 0;
+    display: none;
+}
+
+.loader::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 10px solid #ddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s linear infinite;
+}
+
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.loaderSpinner {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    transition: all 0.75s;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loaderSpinner h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.loaderSpinner>svg {
+    width: 200px;
+}
+
+.loaderSpinner #Tracé_1 {
+    stroke-dasharray: 2070;
+    animation: loadingSpin 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    stroke: #009578;
+}
+
+@keyframes loadingSpin {
+    to {
+        stroke-dashoffset: 4140;
+    }
+}
+
+
+.loaderSpinner #Groupe_1 {
+    opacity: 0;
+    animation: opAnim 2.5s linear infinite;
+}
+
+.loaderSpinner #Ellipse_1 {
+    opacity: 0;
+    animation: opAnim2 2.5s linear infinite;
+}
+
+
+@keyframes opAnim {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opAnim2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/********* **********/
+.navig .navigation li{
+    position: relative;
+    transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navig .navigation li::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 5px;
+  background: var(--withe-color);
+  bottom: -5px;
+  transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
+  left: 0;
+}
+.navig .navigation li.active::after{
+  width: 3rem;
+}
+.navig .navigation li#hilalao.active::after{
+    width: 1rem;
+}
+
+.navig .navigation li#hilalao.active:hover::after{
+    width: 100%;
+}
+
+.navig .navigation li:hover::after{
+  width: 100%;
+}
+
+
+
+/*********END LOADER ANIMATION******/
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.logo__image{
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo svg{
+    width: 4rem;
+}
+
+
+.logo__image.animLogo #Tracé_47{
+    stroke-dasharray: 1900;
+    fill: transparent;
+    stroke: #8BC34A;
+    stroke-width: 30px;
+    animation: anim 2s linear forwards;
+}
+    
+    
+@keyframes anim {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    
+    80% {
+        stroke-dashoffset: 3800;
+        fill: transparent;
+    }
+    
+    100% {
+        stroke-dashoffset: 3800;
+        fill: #8BC34A;
+    }
+}
+   
+
+.logo__image.animLogo #Tracé_46{
+    stroke-dasharray: 1900;
+    fill: transparent;
+    stroke: #8BC34A;
+    stroke-width: 30px;
+   animation: anim 2s linear forwards;
+}
+    
+@keyframes anim {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    
+    80% {
+        stroke-dashoffset: -3800;
+        fill: transparent;
+    }
+    
+    100% {
+        stroke-dashoffset: -3800;
+        fill: #8BC34A;
+    }
+}
+    
+    
+/* .logo__image #Tracé_49,
+.logo__image #Tracé_48 {
+    animation: leftAnim 2s linear forwards;
+    opacity: 0;
+} */
+
+.logo__image.animLogo #Tracé_49, .logo__image.animLogo #Tracé_48{
+    animation: leftAnim 2s linear forwards;
+        opacity: 0;
+}
+    
+@keyframes leftAnim {
+    0% {
+      opacity: 0;
+    }
+    
+    80% {
+      opacity: 0;
+    }
+    
+    100% {
+         fill: #8BC34A;
+         opacity: 1;
+    }
+}
+
+
+/********* MAIN CONTAINT TOP  ********/
+
+.main__container > .top{
+    height: 100%;
+    width: 100%;
+    background: var(--them-bg);
+    background-size: cover;
+    transition: var(--transition);
+    position: absolute;
+    overflow: hidden;
+    top: -100%;
+}
+
+.main__container>.top.active{
+    top: 0;
+    left: 0;
+}
+
+.main__container>.top header .navig{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigBtn{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.main__container>.top header .navigation{
+    display: flex;
+    gap: 1.8rem;
+    font-weight: 600;
+}
+
+.main__container>.top header .close{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+ .theme{
+    display: flex;
+    gap: 1rem;
+}
+
+ .theme>div{
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 6px solid var(--withe-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ .theme>div:nth-child(1){
+    background: var(--blue-color);
+}
+
+ .theme>div:nth-child(2){
+    background: var(--orange-color);
+}
+ .theme>div:nth-child(3){
+    background: var(--red-color);
+}
+ .theme>div:nth-child(4) {
+    background: var(--black-color);
+}
+
+.main__container>.top .owl-carousel .container__md{
+    position: relative;
+    height: 40rem;
+    padding: 2rem 0;
+}
+
+.main__container>.top .container__md .left{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-direction: column;
+    left: 0;
+    z-index: 2;
+    width: 60%;
+    height: 100%;
+}
+
+.main__container>.top .container__md .left h2{
+    font-size: 3rem;
+}
+
+.main__container>.top .container__md .left h1{
+    font-size: 5rem;
+}
+.main__container>.top .container__md .left p{
+    line-height: 2;
+}
+
+.main__container>.top .container__md .right{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100%;
+}
+
+
+/*****************************************************************/
+
+.scrollBottom {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    right: 3rem;
+    bottom: 25rem;
+    border: 1px solid var(--withe-color);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.scrollBottom img{
+    margin: 0.7rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        animation: animScrollB 1.6s linear infinite;
+    }
+    
+    @keyframes animScrollB {
+        0% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(5px);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+/********* MAIN CONTAINT BOTTOM  ********/
+.main__container>.bottom{
+    background: var(--bg-color);
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: var(--transition);
+}
+
+.main__container>.bottom.active{
+    top: 0;
+    left: 0;
+}
+
+
+.main__container>.bottom .navigation{
+    display: flex;
+    gap: 2rem;
+}
+
+.main__container>.bottom .navigation.smallDevice{
+    display: none;
+}
+
+.main__container>.bottom .navigation li{
+    background: var(--orange-color);
+    padding: 0.6rem 1.8rem;
+    border-radius: 3rem;
+}
+
+
+.main__container>.top .container__md {
+    position: relative;
+    height: 100%;
+}
+
+.main__container>.bottom .container__md{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1.2rem;
+    height: 85%;
+}
+
+.main__container > .bottom .all__games{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    flex: 2.6;
+    gap: 1.6rem;
+}
+
+.main__container>.bottom .all__games .game{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__container>.bottom .all__games .box{
+    background-color: var(--orange-color);
+    background-image: radial-gradient(circle,var(--withe-tranparent-color),var(--orange-color),var(--orange-color));
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.main__container>.bottom .all__games >div:nth-child(2) .box,
+.main__container>.bottom .all__games >div:nth-child(4) .box{
+    background-image: radial-gradient(circle, var(--withe-tranparent-color), var(--green-color), var(--green-color));
+}
+
+.main__container>.bottom .all__games>div:nth-child(3) .box,
+.main__container>.bottom .all__games>div:nth-child(5) .box {
+    background-image: radial-gradient(circle, var(--withe-tranparent-color), var(--pink-color), var(--pink-color));
+}
+
+.main__container>.bottom .all__games .box .about__game{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+    flex-direction: column;
+    opacity: 0.8;
+    background: var(--withe-color);
+    transition: var(--transition);
+}
+
+.main__container>.bottom .all__games .box .about__game p{
+   font-size: 12px;
+   width: 80%;
+}
+
+.main__container>.bottom .all__games .box:hover .about__game{
+     top: 0;
+}
+
+.bottom__line{
+    height: 5px;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.734);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.main__container>.bottom .user{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: center;
+    background: var(--withe-color);
+    border-radius: 2rem;
+    color: var(--black-color);
+    flex: 1;
+    height: auto;
+    margin: auto 0;
+}
+
+.main__container>.bottom .user.smallDevice{
+    display: none;
+}
+
+.main__container>.bottom .user .user__photo{
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-50%);
+    padding: 1.1rem;
+    transition: var(--transition);
+    background: var(--withe-color);
+    border-radius: 50%;
+    border: 8px solid var(--bg-color);
+}
+
+.main__container>.bottom .user .bottom{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: center;
+    transform: translateY(-45px);
+}
+
+.main__container>.bottom .user .country{
+    width: 2rem;
+}
+
+.main__container>.bottom .user .progress{
+    position: relative;
+    z-index: 2;
+    height: 0.4rem;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    width: 80%;
+    background: #DDDDDD;
+}
+
+.main__container>.bottom .user .progress div{
+    width: 60%;
+    height: 100%;
+    background: var(--orange-color);
+    border-radius: 0.6rem;
+}
+
+.main__container>.bottom .user span{
+    font-weight: 600;
+}
+
+.main__container>.bottom .user span.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.main__container>.bottom .user .icons__games{
+    display: flex;
+    gap: 2rem;
+}
+
+.main__container>.bottom .user .icons__games div{
+    width: 1.8rem;
+}
+
+.main__container>.bottom .user .about__user{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__container>.bottom .user .about__user > div:nth-child(3){
+   padding-bottom: 1.5rem;
+   border-bottom: 1px solid #DDDDDD;
+}
+
+.scrollTop{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 3rem;
+    bottom: 3rem;
+    border: 1px solid var(--withe-color);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+.scrollTop img{
+    margin: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: animScroll 1.6s linear infinite;
+}
+
+@keyframes animScroll{
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(-5px);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+/********** CAR ANIMATION GAME ************/
+.games {
+    position: absolute;
+    background: url("./assets/images/bgGameConsol.svg") no-repeat center;
+    background-size: cover;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    transition: var(--transition);
+}
+
+.games.active{
+    top: 0;
+}
+
+.games .leave{
+    background: var(--yellow-color);
+    padding: 0.6rem 1.8rem;
+    border-radius: 2rem;
+    text-shadow: 0px 0px 4px black;
+    cursor: pointer;
+}
+
+.CarDiv {
+    width: 80%;
+    height: 80%;
+    background: url('bgGameCar.svg') no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+.contentAllGame {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.contentAllGame .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+}
+
+.contentAllGame .contentGame {
+    background: #D84B53;
+    z-index: 2;
+    border-radius: 35px;
+    padding-bottom: 1rem;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    border: 1.5rem solid #fff;
+}
+
+.contentAllGame .leftImg {
+    position: absolute;
+    bottom: -18px;
+    right: -1rem;
+    width: 28%;
+    z-index: -1;
+    z-index: -1;
+    opacity: .3;
+}
+
+.contentAllGame .lineSquare {
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+    width: 100px;
+}
+
+
+
+
+.contentAllGame .top .screenGame {
+    width: 90%;
+    height: 65%;
+    background-size: cover;
+    margin: 1rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentAllGame .top .screenGame #car_game {
+    height: 100%;
+    border: 7px solid #D9D2D2;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contentAllGame .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentAllGame .bottom .left img {
+    width: 2rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.contentAllGame .bottom .left img:active {
+    cursor: pointer;
+    border: 2px solid #FFA000;
+    border-radius: 10px;
+}
+
+.contentAllGame .bottom .left,
+.right {
+    position: relative;
+}
+
+.contentAllGame .bottom .left .vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contentAllGame .bottom .left .horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    position: absolute;
+    top: 32%;
+    left: -107%;
+}
+
+
+.contentAllGame .bottom .center {
+    display: flex;
+    gap: 2rem;
+}
+
+.contentAllGame .bottom .center button {
+    padding: 8px;
+    width: 100px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.contentAllGame .bottom .center button:active {
+    border: 2px solid #FFA000;
+}
+
+
+.contentAllGame .bottom .right .vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contentAllGame .bottom .right span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 5px rgb(29, 28, 28);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.contentAllGame .bottom .right span:active {
+    border: 2px solid #FFA000;
+}
+
+.contentAllGame .bottom .right span.x:active {
+    border: 2px solid #1E54DB;
+}
+
+
+.contentAllGame .bottom .right span.a {
+    background: #429B06;
+}
+
+.contentAllGame .bottom .right span.x {
+    background: #FFA000;
+}
+
+.contentAllGame .bottom .right span.o {
+    background: #1E54DB;
+}
+
+.contentAllGame .bottom .right span.y {
+    background: #FE277E;
+}
+
+.contentAllGame .bottom .right .horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    position: absolute;
+    top: 32%;
+    right: -2.6rem;
+}
+
+
+
+
+
+/* ************* VOITURE **************** */
+
+.contentAllCar {
+    position: absolute;
+    bottom: 40px;
+    left: 9px;
+}
+
+.screenGame .voiture {
+    width: 100px;
+    position: relative;
+}
+
+
+.screenGame .roux {
+    position: absolute;
+    width: 100px;
+    display: flex;
+    gap: 35px;
+    bottom: -10px;
+    left: 12px;
+}
+
+.screenGame .wheel_left,
+.wheel_right {
+    width: 25px;
+}
+
+.wheelAnim {
+    animation: roux 1.5s linear infinite;
+    width: 25px;
+}
+
+
+
+@keyframes roux {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.screenGame .body_car {
+    width: 100px;
+}
+
+
+
+/* ************ RAHONA *************** */
+
+
+
+#icons8_cloud {
+    animation: rahona 20s linear infinite;
+}
+
+@keyframes rahona {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(110%);
+    }
+}
+
+
+#icons8_cloud_1 {
+    transform: translateY(300px);
+    animation: rahona2 25s linear infinite alternate-reverse;
+}
+
+@keyframes rahona2 {
+    0% {
+        transform: translateX(0%);
+        transform: translateY(300px)
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/* *********** MATH GAME *********** */
+
+.mathSrceen{
+    position: relative;
+    height: 60vh;
+    background: var(--black-color);
+    width: 85%;
+    margin: 2rem auto;
+    border: 5px solid var(--withe-color);
+    border-radius: 1rem;
+}
+
+.mathSrceen img{
+    width: 3rem;
+}
+
+.mathSrceen span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mathSrceen .exemples{
+    margin: 2rem auto;
+    width: fit-content;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid white;
+}
+
+.mathSrceen .exemples > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mathSrceen .questions{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mathSrceen .questions > div ,.mathSrceen .questions>div>div{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin:auto;
+    gap: 2rem;
+}
+
+.mathSrceen .questions>div.question3{
+    display: flex;
+}
+
+.mathSrceen .questions input{
+    width: 4rem;
+    padding: 4px 10px;
+}
+
+.mathSrceen .timer{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 2px solid white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.mathSrceen .timer h3{
+    font-size: 3.5rem;
+}
+
+.mathSrceen .questions .question2{
+    display: none;
+}
+
+.mathSrceen .questions .question3{
+    display: none;
+}
+
+
+/* ******** QUIZ GAME ******** */
+
+
+.quizGame {
+    position: relative;
+    height: 60vh;
+    background: var(--black-color);
+    width: 85%;
+    margin: 2rem auto;
+    border: 5px solid var(--withe-color);
+    border-radius: 1rem;
+}
+
+.quizGame h2{
+    margin: 1rem;
+    text-align: center;
+}
+
+.quizGame .questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.quizGame .questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.quizGame .questions .contentInput{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.quizGame button{
+    width: fit-content;
+    margin-left: 2.5rem;
+
+}
+
+.quizGame .questions input{
+    width: 2rem;
+}
+
+.quizGame .questions span{
+    display: flex;
+    gap: 1rem;
+}
+
+.quizGame .anwerQuiz{
+    display: flex;
+}
+
+.quizGame .questions input{
+    width: 60px;
+    padding: 8px;
+}
+
+.quizGame .question2,.quizGame .question3{
+    display: flex;
+    flex-direction: column;
+}
+
+.quizGame .sub{
+    width: fit-content;
+    margin: auto;
+}
+
+.quizGame input{
+    padding: 7px;
+    width: 65px;
+}
+
+.quizGame button{
+    padding: 7px;
+    background: var(--yellow-color);
+    border-radius: 1rem;
+    width: 60px;
+    font-weight: 600;
+    color: var(--withe-color);
+    text-shadow: 0px 0px 4px var(--black-color);
+}
+
+
+/********** RANGE SENTENCES *********/
+
+.ranges {
+    position: relative;
+    height: 55vh;
+    background: var(--black-color);
+    width: 85%;
+    margin: 2rem auto;
+    border: 5px solid var(--withe-color);
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.ranges .sentences{
+    font-size: 18px;
+}
+
+.ranges .sentences .sentence2,.ranges .sentences .sentence3{
+    display: none;
+}
+
+.ranges .btn{
+    width: fit-content;
+}
+
+
+.creenLapin{
+    width: 100%;
+    position: relative;
+}
+
+.creenLapin > div:first-child{
+    width: 80%;
+    position: relative;
+    border: 5px solid var(--withe-color);
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+
+.creenLapin>div:first-child img{
+    position: absolute;
+    bottom: 5rem;
+    left: 0.6rem;
+    width: 2rem;
+}
+
+.creenLapin>div:first-child img.lapin{
+    animation: lapin 1s linear infinite;
+    transition: var(--transition);
+    bottom: 4.5rem;
+}
+
+@keyframes lapin{
+    0%{
+        bottom: 4.5rem;
+    }50%{
+        bottom: 5rem;
+    }100%{
+        bottom: 4.5rem;
+    }
+}
+
+.creenLapin>div:first-child img.turtle {
+    position: absolute;
+    bottom: 7.5rem;
+    width: 2rem;
+}
+
+.creenLapin>div img.anime{
+    animation: turtle 15s linear forwards;
+}
+
+
+@keyframes turtle {
+    to{
+        left: 40rem;
+    }
+}
+
+
+
+
+
+.mathSrceen .reponseValiny.marina{
+    background: var(--green-color);
+    padding: 5px;
+    color: var(--withe-color);
+    display: block;
+}
+
+.mathSrceen .reponseValiny.diso {
+    background: var(--red-color);
+    padding: 5px;
+    color: var(--withe-color);
+    display: block;
+}
+
+.mathSrceen .questions button{
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.sub p.marina{
+    background: var(--green-color);
+        padding: 5px;
+        color: var(--withe-color);
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+}
+
+.sub p.diso {
+    background: var(--red-color);
+    padding: 5px;
+    color: var(--withe-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.pRange.marina {
+    background: var(--green-color);
+    padding: 5px;
+    color: var(--withe-color);
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.pRange.diso {
+    background: var(--red-color);
+        padding: 5px;
+        color: var(--withe-color);
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+}

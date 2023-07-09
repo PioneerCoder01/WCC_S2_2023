@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Tracé_51" x="1340.341" y="294.585" width="588.659" height="804.415" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_51-2" x="1340.341" y="294.585" width="588.659" height="804.415" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_7">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_7" data-name="Web 1920 – 7" clip-path="url(#clip-Web_1920_7)">
+    <rect width="1920" height="1080" fill="#1e54db"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_51)">
+        <path id="Tracé_51-3" data-name="Tracé 51" d="M3917.754,2698.717c-129.873-13.774.966,121.761-153.45,159.771s-152.756-106.138-270.822-45.137-204.615,177.024-90.484,259.67c98.038,70.993,230.606,407.647,391.193,409.964,17.256.249,53.713.01,84.254.116,10.336.036,20.794.1,29.054,0,2.325-.025,8.043.02,10.256,0,1.062,0-1.321.2,0-.974.641-.57,0-1.576,0-2.654.025-1.29-.146-2.884,0-4.583a97.979,97.979,0,0,0,0-13.75c-.517-10.13.038-18.314,0-36.606.059-93.838.874-62.149,0-91.116.782-150.111-3.542-154.132,0-260.537C3923.145,2910.926,3917.754,2698.717,3917.754,2698.717Z" transform="translate(-2000.15 -2403.15)" fill="#2d75e4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_51-2)">
+        <path id="Tracé_51-4" data-name="Tracé 51" d="M3917.754,2698.717c-129.873-13.774.966,121.761-153.45,159.771s-152.756-106.138-270.822-45.137-204.615,177.024-90.484,259.67c98.038,70.993,230.606,407.647,391.193,409.964,17.256.249,53.713.01,84.254.116,10.336.036,20.794.1,29.054,0,2.325-.025,8.043.02,10.256,0,1.062,0-1.321.2,0-.974.641-.57,0-1.576,0-2.654.025-1.29-.146-2.884,0-4.583a97.979,97.979,0,0,0,0-13.75c-.517-10.13.038-18.314,0-36.606.059-93.838.874-62.149,0-91.116.782-150.111-3.542-154.132,0-260.537C3923.145,2910.926,3917.754,2698.717,3917.754,2698.717Z" transform="translate(-2000.15 -2403.15)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_33" data-name="Groupe 33" transform="translate(-1889 -2144.378)">
+      <g id="Polygone_1" data-name="Polygone 1" transform="translate(2052 3063.378)" fill="none">
+        <path d="M61.5,0,82,35.5,61.5,71h-41L0,35.5,20.5,0Z" stroke="none"/>
+        <path d="M 23.38645935058594 5 L 5.773780822753906 35.5 L 23.38645935058594 66 L 58.61354064941406 66 L 76.22621917724609 35.5 L 58.61354064941406 5 L 23.38645935058594 5 M 20.5 0 L 61.5 0 L 82 35.5 L 61.5 71 L 20.5 71 L 0 35.5 L 20.5 0 Z" stroke="none" fill="#f07547"/>
+      </g>
+      <g id="Polygone_2" data-name="Polygone 2" transform="translate(2127 3017.378)" fill="none">
+        <path d="M61.5,0,82,35.5,61.5,71h-41L0,35.5,20.5,0Z" stroke="none"/>
+        <path d="M 23.38645935058594 5 L 5.773780822753906 35.5 L 23.38645935058594 66 L 58.61354064941406 66 L 76.22621917724609 35.5 L 58.61354064941406 5 L 23.38645935058594 5 M 20.5 0 L 61.5 0 L 82 35.5 L 61.5 71 L 20.5 71 L 0 35.5 L 20.5 0 Z" stroke="none" fill="#fff"/>
+      </g>
+      <g id="Polygone_3" data-name="Polygone 3" transform="translate(2202 2972.378)" fill="none">
+        <path d="M60.75,0,81,35.5,60.75,71H20.25L0,35.5,20.25,0Z" stroke="none"/>
+        <path d="M 23.15414428710938 5 L 5.756256103515625 35.5 L 23.15414428710938 66 L 57.84585571289062 66 L 75.24374389648438 35.5 L 57.84585571289062 5 L 23.15414428710938 5 M 20.25 0 L 60.75 0 L 81 35.5 L 60.75 71 L 20.25 71 L 0 35.5 L 20.25 0 Z" stroke="none" fill="#d84b53"/>
+      </g>
+    </g>
+    <path id="Tracé_50" data-name="Tracé 50" d="M1990,2746.731c264.68-39.561,179.006,171.429,347.59,178.964s187.929,293.878,187.929,293.878" transform="translate(-1990 -2440.684)" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="50"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 851.414, 63.741)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-2" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 883.639, 83.878)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-3" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 915.865, 104.015)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-4" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 948.091, 124.151)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-5" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 980.317, 144.288)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-6" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1012.543, 164.425)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-7" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1044.769, 184.562)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-8" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1076.994, 204.699)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-9" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1109.22, 224.836)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-10" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 829.687, 98.511)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-11" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 861.913, 118.648)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-12" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 894.139, 138.784)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-13" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 926.364, 158.921)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-14" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 958.59, 179.058)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-15" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 990.816, 199.195)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-16" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1023.042, 219.332)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-17" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1055.268, 239.469)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-18" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1087.494, 259.606)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-19" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 807.96, 133.281)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-20" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 840.186, 153.418)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-21" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 872.412, 173.554)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-22" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 904.638, 193.691)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-23" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 936.864, 213.828)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-24" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 969.089, 233.965)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-25" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1001.315, 254.102)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-26" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1033.541, 274.239)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-27" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1065.767, 294.376)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-28" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 786.234, 168.051)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-29" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 818.459, 188.188)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-30" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 850.685, 208.324)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-31" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 882.911, 228.461)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-32" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 915.137, 248.598)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-33" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 947.363, 268.735)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-34" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 979.589, 288.872)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-35" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1011.814, 309.009)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-36" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1044.04, 329.146)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-37" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 764.507, 202.821)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-38" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 796.733, 222.957)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-39" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 828.958, 243.094)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-40" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 861.184, 263.231)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-41" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 893.41, 283.368)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-42" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 925.636, 303.505)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-43" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 957.862, 323.642)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-44" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 990.088, 343.779)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-45" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1022.313, 363.916)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-46" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 742.78, 237.591)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-47" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 775.006, 257.727)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-48" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 807.232, 277.864)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-49" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 839.458, 298.001)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-50" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 871.683, 318.138)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-51" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 903.909, 338.275)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-52" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 936.135, 358.412)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-53" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 968.361, 378.549)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-54" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 1000.587, 398.686)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-55" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 721.053, 272.36)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-56" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 753.279, 292.497)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-57" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 785.505, 312.634)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-58" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 817.731, 332.771)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-59" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 849.957, 352.908)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-60" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 882.183, 373.045)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-61" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 914.408, 393.182)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-62" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 946.634, 413.319)" fill="#fff" opacity="0.37"/>
+    <rect id="Rectangle_20-63" data-name="Rectangle 20" width="18" height="18" transform="matrix(0.848, 0.53, -0.53, 0.848, 978.86, 433.456)" fill="#fff" opacity="0.37"/>
+  </g>
+</svg>

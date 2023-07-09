@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="588.659" height="804.415" viewBox="0 0 588.659 804.415">
+  <defs>
+    <filter id="Tracé_51" x="0" y="0" width="588.659" height="804.415" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_51-2" x="0" y="0" width="588.659" height="804.415" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_51)">
+      <path id="Tracé_51-3" data-name="Tracé 51" d="M3917.754,2698.717c-129.873-13.774.966,121.761-153.45,159.771s-152.756-106.138-270.822-45.137-204.615,177.024-90.484,259.67c98.038,70.993,230.606,407.647,391.193,409.964,17.256.249,53.713.01,84.254.116,10.336.036,20.794.1,29.054,0,2.325-.025,8.043.02,10.256,0,1.062,0-1.321.2,0-.974.641-.57,0-1.576,0-2.654.025-1.29-.146-2.884,0-4.583a97.979,97.979,0,0,0,0-13.75c-.517-10.13.038-18.314,0-36.606.059-93.838.874-62.149,0-91.116.782-150.111-3.542-154.132,0-260.537C3923.145,2910.926,3917.754,2698.717,3917.754,2698.717Z" transform="translate(-3340.49 -2697.74)" fill="#2d75e4"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_51-2)">
+      <path id="Tracé_51-4" data-name="Tracé 51" d="M3917.754,2698.717c-129.873-13.774.966,121.761-153.45,159.771s-152.756-106.138-270.822-45.137-204.615,177.024-90.484,259.67c98.038,70.993,230.606,407.647,391.193,409.964,17.256.249,53.713.01,84.254.116,10.336.036,20.794.1,29.054,0,2.325-.025,8.043.02,10.256,0,1.062,0-1.321.2,0-.974.641-.57,0-1.576,0-2.654.025-1.29-.146-2.884,0-4.583a97.979,97.979,0,0,0,0-13.75c-.517-10.13.038-18.314,0-36.606.059-93.838.874-62.149,0-91.116.782-150.111-3.542-154.132,0-260.537C3923.145,2910.926,3917.754,2698.717,3917.754,2698.717Z" transform="translate(-3340.49 -2697.74)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

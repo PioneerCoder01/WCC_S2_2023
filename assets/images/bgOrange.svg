@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Tracé_1" x="-9" y="328.931" width="1938" height="770.069" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_1-2" x="-9" y="328.931" width="1938" height="770.069" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.439" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" clip-path="url(#clip-Web_1920_2)">
+    <rect width="1920" height="1080" fill="#f07547"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_1)">
+        <path id="Tracé_1-3" data-name="Tracé 1" d="M0,328.931C273.361,464.644,490.739,557.042,623.04,473.94s308.976-68.786,345.979,52.054,32.759,133.87,74.006,200.781,175.765,94.813,207.217-13.014-1.85-232.385,99.909-239.821,223.822,77.667,277.523,111.545S1920,693.311,1920,693.311V1080H0Z" fill="#d36a42"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_1-2)">
+        <path id="Tracé_1-4" data-name="Tracé 1" d="M0,328.931C273.361,464.644,490.739,557.042,623.04,473.94s308.976-68.786,345.979,52.054,32.759,133.87,74.006,200.781,175.765,94.813,207.217-13.014-1.85-232.385,99.909-239.821,223.822,77.667,277.523,111.545S1920,693.311,1920,693.311V1080H0Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

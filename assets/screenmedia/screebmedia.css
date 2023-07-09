@@ -1,0 +1,149 @@
+@media (max-width: 1070px) {
+    .container {
+       width: 95%;
+   }
+   .container__md {
+       width: 90%;
+   }
+   .main__container>.bottom header{
+    gap: 1rem;
+   }
+   .main__container>.bottom header .navigation {
+       gap: 1rem;
+   }
+   .main__container>.bottom header .navigation li {
+       padding: 0.6rem 1rem;
+   }
+
+    .contentAllGame .contentGame {
+       width: 90%;
+    }
+
+    .mathSrceen .exemples>div{
+        gap: 1rem;
+    }
+    .mathSrceen .questions>div,
+    .mathSrceen .questions>div>div{
+        gap: 1rem;
+    }
+
+    .mathSrceen .questions input {
+        width: 3rem;
+        padding: 2px 6px;
+    }
+
+   .main__container>.bottom .container__md {
+       height: 70%;
+       margin-top: 3rem;
+   }
+   
+}
+
+@media (max-width: 900px){
+    .main__container>.bottom header .navigation {
+        display: none;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .main__container>.bottom{
+        overflow-y: auto;
+    }
+    .main__container>.top header .navig{
+        display: none;
+    }
+
+    .main__container>.top header .show .close{
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    .main__container>.top header .navig.show{
+        position: absolute;
+        height: 100%;
+        z-index: 100;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #0D0821;
+        animation: showmodal .5s linear forwards;
+    }
+
+    @keyframes showmodal {
+        to{
+            left: 0;
+        }
+    }
+
+    .main__container>.top header .navig.show .navigation{
+        flex-direction: column;
+        transform: translateX(-45px);
+        gap: 1rem;
+    }
+
+    .navigBtn{
+        display: flex;
+    }
+
+    .main__container>.bottom .all__games{
+            padding-bottom: 3rem;
+        }
+
+    .main__container>.bottom .navigation.smallDevice{
+        display: flex;
+    }
+
+    .main__container>.bottom .user.smallDevice{
+            display: flex;
+        }
+    .main__container>.bottom .user.largeDevice{
+        display: none;
+    }
+    .main__container>.bottom .container__md{
+        flex-direction: column;
+    }
+    
+    .main__container>.bottom .container__md {
+            height: auto;
+            margin-top: 3rem;
+        }
+   .main__container>.bottom .all__games {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 572px){
+   
+    .logo__image {
+        width: 3rem;
+         height: 3rem;
+    }
+    
+    .logo svg {
+        width: 3rem;
+    }
+    .bottom .theme>div {
+         width: 1rem;
+         height: 1rem;
+         border: 4px solid var(--withe-color);
+        }
+    .main__container>.bottom .all__games {
+        grid-template-columns:1fr;
+    }
+
+    .main__container>.bottom .navigation.smallDevice {
+         gap: 0.6rem;
+         font-size: 12px;
+        }
+
+    .main__container>.bottom .navigation.smallDevice li{
+        padding:8px 10px;
+    }
+}
