@@ -7,6 +7,8 @@
             const wrapper = document.querySelector('.wrapper');
             const logo = document.querySelector('.logo__image')
 
+            setInterval(() => {
+            }, 3500);
             loader.classList.add('loader_hidden');
 
             loader.addEventListener('transitionend',()=>{
@@ -483,7 +485,7 @@ leave.addEventListener('click',()=>{
             nav:true,
             dots:true,
             autoplay: true,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 10000,
             autoplaySpeed: 1500,
             responsive:{
                 0:{
